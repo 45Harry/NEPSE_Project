@@ -20,7 +20,7 @@ def load_model_and_predict(texts):
         predict_fn = model.signatures["serving_default"]
         
         # 4. Tokenize input (with proper TensorFlow conversion)
-        inputs = tokenizer(texts, 
+        inputs = tokenizer(text, 
                          return_tensors="tf", 
                          padding=True, 
                          truncation=True,

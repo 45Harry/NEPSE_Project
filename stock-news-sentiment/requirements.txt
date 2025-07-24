@@ -1,0 +1,5 @@
+streamlit
+transformers
+tensorflow
+googletrans==4.0.0rc1 
+python3.12.8

@@ -17,7 +17,7 @@ def Translator_nepali_to_english(text):
 
 
 if __name__== '__main__':
-    data = Translator_nepali_to_english("शेयर बजार आज तेजीमा छ।") # English: The stock market is in crucified today.
+    data = Translator("Hello my name is hari")
     print('this is the translated text ',data)
 
 

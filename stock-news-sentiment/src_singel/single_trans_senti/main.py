@@ -5,16 +5,7 @@ from src.predict import  load_model_and_predict
 
 
 
-def predict_sentimetn(text):
-    """ 
-    Input: Nepali news in string format 
-    Output: Sentiment — "Positive", "Neutral", or "Negative" 
-    Steps: 
-        1. Translate to English 
-        2. Preprocess text 
-        3. Vectorize 
-        4. Predict using trained model 
-    """ 
+def SentimentAnalysisUsingFinBert(text):
     translated_text = Translator_nepali_to_english(text)
     sentiment = load_model_and_predict(translated_text) 
 
@@ -24,6 +15,6 @@ def predict_sentimetn(text):
 
 
 if __name__ == '__main__':
-    translated, sentiment = predict_sentimetn('शेयर बजार आज तेजीमा छ।')
+    translated, sentiment = SentimentAnalysisUsingFinBert('शेयर बजार आज तेजीमा छ।')
     print(f"Translated: {translated}")
     print(f"Sentiment: {sentiment}")
